@@ -26,7 +26,7 @@
                     <sourcedir format="JPG"> earth/googlesat </sourcedir>
                     <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="20" mode="Custom" />
                     <projection name="Mercator" />
-                    <downloadUrl protocol="http" host="khm.google.com" path="/kh/v=76&amp;hl=de&amp;x={x}&amp;s=&amp;y={y}&amp;z={zoomLevel}&amp;s=Ga" />
+                    <downloadUrl protocol="http" host="khm.google.com" path="/kh/v=82&amp;hl=de&amp;x={x}&amp;s=&amp;y={y}&amp;z={zoomLevel}&amp;s=Ga" />
                 </texture>
                 <texture name="streets" expire="31536000" >
                     <sourcedir format="PNG"> earth/googlesat/streets </sourcedir>
@@ -77,6 +77,12 @@
                 <value>true</value>
                 <available>true</available>
             </property>
+            <group name="Places">
+                <property name="places">
+                    <value>true</value>
+                    <available>true</available>
+                </property>
+            </group>
             <group name="Texture Layers">
                 <property name="streets">
                     <value>true</value>
@@ -90,6 +96,9 @@
             </section>
             <section name="coordinate-grid" checkable="true" connect="coordinate-grid" spacing="12">
                 <heading>Coordinate Grid</heading>
+            </section>
+            <section name="places" checkable="true" connect="places" spacing="12">
+                <heading>Places of Interest</heading>
             </section>
         </legend>
     </document>
