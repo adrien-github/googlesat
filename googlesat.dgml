@@ -37,7 +37,7 @@
                 </texture>
             </layer>
             <layer name="standardplaces" backend="geodata">
-               <geodata name="cityplacemarks">
+                <geodata name="cityplacemarks">
                     <sourcefile format="KML">cityplacemarks.kml</sourcefile>
                     <pick>placemark</pick>
                 </geodata>
@@ -50,12 +50,11 @@
                     <pick>placemark</pick>
                 </geodata>
                 <geodata name="otherplacemarks">
-                    <sourcefile
-                    format="KML">otherplacemarks.kml</sourcefile>
+                    <sourcefile format="KML">otherplacemarks.kml</sourcefile>
                     <pick>placemark</pick>
                 </geodata>
                 <geodata name="boundaryplacemarks">
-                    <sourcefile format="KML">boundaryplacemarks</sourcefile>
+                    <sourcefile format="KML">boundaryplacemarks.kml</sourcefile>
                     <pick>placemark</pick>
                 </geodata>
             </layer>
@@ -81,6 +80,18 @@
                 <property name="places">
                     <value>true</value>
                     <available>true</available>
+                </property>
+                <property name="cities">
+                    <value>false</value>
+                    <available>false</available>
+                </property>
+                <property name="terrain">
+                    <value>false</value>
+                    <available>false</available>
+                </property>
+                <property name="otherplaces">
+                    <value>false</value>
+                    <available>false</available>
                 </property>
             </group>
             <group name="Texture Layers">
