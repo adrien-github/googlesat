@@ -33,7 +33,7 @@
                     <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="20" mode="Custom" />
                     <projection name="Mercator" />
                     <downloadUrl protocol="http" host="mt.google.com" path="/vt/lyrs=h@126&amp;hl=de&amp;x={x}&amp;s=&amp;y={y}&amp;z={zoomLevel}&amp;s=Ga" />
-                    <blending name="ScreenBlending" />
+                    <blending name="OverpaintBlending" />
                 </texture>
             </layer>
             <layer name="standardplaces" backend="geodata">
