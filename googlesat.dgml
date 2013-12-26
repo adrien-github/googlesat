@@ -42,6 +42,14 @@
                     <downloadUrl protocol="http" host="mt.google.com" path="/vt/lyrs=h@179207685,bike&amp;x={x}&amp;s=&amp;y={y}&amp;z={zoomLevel}&amp;" />
                     <blending name="OverpaintBlending" />
                 </texture>
+                <texture name="traffic" expire="604800" >
+                    <sourcedir format="PNG"> earth/googlesat/traffic </sourcedir>
+                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="20" mode="Custom" />
+                    <projection name="Mercator" />
+                    <downloadUrl protocol="http" host="mt.google.com" path="/vt/lyrs=h@179207685,traffic&amp;x={x}&amp;s=&amp;y={y}&amp;z={zoomLevel}&amp;" />
+                    <blending name="OverpaintBlending" />
+                </texture>
+
             </layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -110,6 +118,10 @@
                     <value>false</value>
                     <available>true</available>
                 </property>
+                <property name="traffic">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
             </group>
         </settings>
         <legend>
@@ -118,6 +130,9 @@
             </section>
             <section name="bicycle" checkable="true" connect="bicycle" spacing="12">
                 <heading>Bicycle Routes</heading>
+            </section>
+            <section name="traffic" checkable="true" connect="traffic" spacing="12">
+                <heading>Live Traffic</heading>
             </section>
             <section name="coordinate-grid" checkable="true" connect="coordinate-grid" spacing="12">
                 <heading>Coordinate Grid</heading>
